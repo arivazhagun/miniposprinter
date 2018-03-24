@@ -3,15 +3,20 @@
     version="0.1.0"
     xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>miniposprinter</name>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
     <js-module name="miniposprinter" src="www/miniposprinter.js">
         <clobbers target="cordova.plugins.miniposprinter" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="miniposprinter">
-                <param name="android-package"
-                    value="cordova.plugin.miniposprinter.miniposprinter" />
+                <param name="android-package" value="cordova.plugin.miniposprinter.miniposprinter" />
             </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/miniposprinter.java" target-dir="src/cordova/plugin/miniposprinter/miniposprinter" />
