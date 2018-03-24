@@ -1,0 +1,25 @@
+{
+  "name": "cordova.plugin.miniposprinter",
+  "version": "0.1.0",
+  "description": "To Connect mini thermal printer using bluetooth radio",
+  "cordova": {
+    "id": "cordova.plugin.miniposprinter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arivazhagun/miniposprinter.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Arivazhagan Pachiyappan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arivazhagun/miniposprinter/issues"
+  },
+  "homepage": "https://github.com/arivazhagun/miniposprinter#readme"
+}

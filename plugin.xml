@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.plugin.miniposprinter"
+    version="0.1.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>miniposprinter</name>
+    <js-module name="miniposprinter" src="www/miniposprinter.js">
+        <clobbers target="cordova.plugins.miniposprinter" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="miniposprinter">
+                <param name="android-package"
+                    value="cordova.plugin.miniposprinter.miniposprinter" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/miniposprinter.java" target-dir="src/cordova/plugin/miniposprinter/miniposprinter" />
+    </platform>
+</plugin>
