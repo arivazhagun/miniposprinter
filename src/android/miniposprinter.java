@@ -106,6 +106,11 @@ public class BluetoothPrinter extends CordovaPlugin {
             }
             return true;
         }
+        else if (action.equals("coolMethod")) {
+            String message = args.getString(0);
+            this.coolMethod(message, callbackContext);
+            return true;
+        }
         return false;
     }
 
