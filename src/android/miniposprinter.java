@@ -32,7 +32,7 @@ import android.graphics.Bitmap.Config;
 import android.util.Xml.Encoding;
 import android.util.Base64;
 
-public class BluetoothPrinter extends CordovaPlugin {
+public class miniposprinter extends CordovaPlugin {
     private static final String LOG_TAG = "BluetoothPrinter";
     BluetoothAdapter mBluetoothAdapter;
     BluetoothSocket mmSocket;
@@ -47,7 +47,7 @@ public class BluetoothPrinter extends CordovaPlugin {
 
     Bitmap bitmap;
 
-    public BluetoothPrinter() {
+    public miniposprinter() {
     }
 
     @Override
